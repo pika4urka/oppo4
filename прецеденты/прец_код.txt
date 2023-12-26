@@ -1,0 +1,27 @@
+@startuml
+
+actor "Преподаватель" as teacher
+actor "Админ" as admin
+actor "Студент" as student
+actor "Методист" as metodist
+
+left to right direction
+
+metodist -> (Просмотр преподавателя)
+metodist -> (Добавить Предмет)
+metodist -> (Добавить Группу)
+metodist -> (Авторизоваться)
+
+
+teacher -> (Просмотреть Нагрузку)
+teacher -> (Авторизоваться)
+
+admin -> (Добавить Преподавателя)
+admin -> (Добавить Методиста)
+admin -> (Авторизоваться)
+
+student -> (Просмотреть нагрузку по дисциплинам)
+student -> (Просмотр информации о преподавателе)
+student -> (Авторизоваться)
+
+@enduml
